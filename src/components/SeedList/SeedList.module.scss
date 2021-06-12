@@ -1,0 +1,35 @@
+@import "../../assets/styles/variables";
+
+.list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+    @media (max-width: 580px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 380px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.listItem {
+    list-style-type: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    color: #999999;
+    height: 40px;
+}
+
+.itemSpan {
+    margin-left: 8px;
+    color: $text-color;
+}
+
+.itemInput {
+    margin-left: 8px;
+    width: calc(100% - 35px);
+    font-family: Tahoma, sans-serif;
+    color: $text-color;
+}

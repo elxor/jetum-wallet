@@ -1,0 +1,38 @@
+@import '../../assets/styles/variables';
+
+.main {
+    width: 70%;
+    padding-top: 3%;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+        width: 80%;
+    }
+    @media (max-width: 992px) {   
+        width: 90%;    
+    }
+    @media (max-width: 760px) {
+        width: 100%;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+.textLink {
+    color: $main-color-lighter;
+    cursor: pointer;
+    margin-left: 5px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

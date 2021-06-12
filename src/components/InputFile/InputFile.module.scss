@@ -1,0 +1,28 @@
+@import "../../assets/styles/variables";
+
+.inputFileWrapper {
+    text-align: center;
+    height: 50px;
+}
+
+.label {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid $gray-color;
+    padding: 5px 10px;
+    background-color: $item-color-lighter;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $item-color-darker;
+    }
+}
+
+.inputFile {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}

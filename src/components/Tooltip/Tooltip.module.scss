@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables";
+
+.exclamation {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s;
+    margin-left: 5px;
+
+    &:hover {
+        color: $main-color-lighter;
+
+        &:after {
+            background-color: #fff;
+            border: 1px solid $gray-color;
+            bottom: 26px;
+            color: $text-color;
+            content: attr(tooltip);
+            left: 20%;
+            padding: 5px;
+            position: absolute;
+            z-index: 98;
+            min-width: 250px;
+            font-size: 13px;
+            font-family: Tahoma, sans-serif;
+        }
+    }
+}
+
+.iconExclamation {
+    position: relative;
+    top: 1px;
+}

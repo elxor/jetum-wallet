@@ -1,0 +1,34 @@
+@import "../../assets/styles/variables";
+
+.body {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+}
+
+.description {
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.button {
+    height: 48px;
+    max-width: 250px;
+}
+
+.notice {
+    text-align: center;
+    color: $notice-red;
+}
+
+.extraWordWrapper {
+    width: 100%;
+}
+
+.extraWordInput {
+    margin-top: 10px;
+}

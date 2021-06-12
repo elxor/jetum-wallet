@@ -1,0 +1,10 @@
+@import "../../../assets/styles/variables";
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    background-color: $item-color-darker;
+    width: 100%;
+    color: #fff;
+    padding: 5px 10px;
+}

@@ -1,0 +1,17 @@
+@import '../../assets/styles/variables';
+
+.button {
+    background-color: $main-color-lighter;
+    width: 100%;
+    color: #fff;
+
+    &:hover {
+        opacity: 0.85;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background-color: $gray-color;
+        pointer-events: none;
+    }
+}

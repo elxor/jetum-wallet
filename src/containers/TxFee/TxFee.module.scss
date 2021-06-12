@@ -1,0 +1,86 @@
+@import "../../assets/styles/variables";
+
+.text {
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+
+    @media (max-width: 420px) {
+        margin-bottom: 10px;
+    }
+}
+
+.usdSymbol {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.txFeeLine {
+    height: 24px;
+    margin-top: -2px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.feeMargin {
+    margin-left: 5px;
+}
+
+.advansedSettings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 420px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.advansedTitle {
+    font-size: 1.1rem;
+
+    @media (max-width: 420px) {
+        margin-bottom: 10px;
+    }
+}
+
+.switcherWrapper {
+    display: flex;
+}
+
+.hiddenSettings {
+    display: grid;
+    gap: 30px;
+
+    @media (max-width: 420px) {
+        gap: 20px;
+    }
+}
+
+.spanFontSize {
+    font-size: 1.1rem;
+}
+
+.inputNonce,
+.inputData {
+    border: 1px solid $gray-color;
+    padding: 1px 2px;
+    font-family: Tahoma, sans-serif;
+    color: $text-color;
+    margin-left: 10px;
+}
+
+.inputNonce {
+    width: 50px;
+}
+
+.inputData {
+    width: 100%;
+    height: 30px;
+}
+
+.inputDataWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

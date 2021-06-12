@@ -1,0 +1,59 @@
+@import "../../assets/styles/variables";
+
+.wrapper {
+    display: flex;
+}
+
+.inputRange {
+    width: 135px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-slider-runnable-track {
+        border-radius: 5px/100%;
+        height: 8px;
+        background-color: $gray-color;
+    }
+
+    &::-webkit-slider-thumb {
+        background-color: $main-color-lighter;
+        width:10px;
+        height: 20px;
+        margin-top: -6px;
+        cursor: pointer;    
+        -webkit-appearance: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    &::-moz-range-track {
+        border-radius: 5px/100%;
+        height: 8px;
+        background-color: $gray-color;
+    }
+
+    &::-moz-range-thumb {
+        background-color: $main-color-lighter;
+        width:10px;
+        height: 20px;
+        margin-top: -6px;
+        cursor: pointer;
+        -moz-appearance: none;
+        border: none;
+        border-radius: 0;
+    }
+}
+
+.inputText {
+    border: 1px solid $gray-color;
+    padding: 1px 2px;
+    width: 80px;
+    font-family: Tahoma, sans-serif;
+    color: $text-color;
+    margin: 0 3px;
+}

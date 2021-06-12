@@ -1,0 +1,61 @@
+.main {
+    width: 100%;
+    padding-bottom: 6%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.iconEllipsis {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 3px 0;
+}
+
+.content {
+    display: grid;
+    gap: 0 15px;
+    grid-template-areas:
+        "sendField sidebarUpper"
+        "sendField sidebarBottom"
+        ". sidebarBottom";
+    grid-template-columns: 13fr 7fr;
+    grid-template-rows: auto auto 0;
+
+    @media (max-width: 860px) {
+        gap: 15px 0;
+        grid-template-areas:
+            "sidebarUpper"
+            "sendField"
+            "sidebarBottom";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+.sendField {
+    grid-area: sendField;
+}
+
+.sidebarUpper {
+    grid-area: sidebarUpper;
+    margin-bottom: 15px;
+
+    @media (max-width: 860px) {
+        margin-bottom: 0;
+    }
+}
+
+.sidebarBottom {
+    grid-area: sidebarBottom;
+}

@@ -1,0 +1,59 @@
+@import "../../assets/styles/variables";
+
+.content {
+    display: grid;
+    gap: 20px;
+    padding: 10px 10px 0 10px;
+}
+
+.discription {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.warning {
+    color: $notice-red;
+    text-align: center;
+}
+
+.success {
+    color: $main-color-lighter;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 3px;
+}
+
+.inputText {
+    border: 1px solid $gray-color;
+    padding: 1px 2px;
+    width: 120px;
+    font-family: Tahoma, sans-serif;
+    color: $text-color;
+}
+
+.textPrompt {
+    font-size: 0.85rem;
+}
+
+.button {
+    margin-bottom: -5px;
+    height: 28px;
+    max-width: 100px;
+    justify-self: center;
+}
+
+.item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+
+    @media (max-width: 520px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

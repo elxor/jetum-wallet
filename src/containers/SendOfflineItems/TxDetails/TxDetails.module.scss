@@ -1,0 +1,58 @@
+@import "../../../assets/styles/variables";
+
+.title {
+    background-color: $item-color-darker;
+    width: 100%;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.text {
+    font-size: 1.1rem;
+}
+
+.info {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.itemInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.marginRight {
+    margin-right: 12px;
+}
+
+.sendBtnWrapper {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sendBtn {
+    height: 34px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.iconSpin {
+    font-size: 18px;
+}
+
+.loading {
+    margin: 0 auto;
+    width: 150px;
+    color: #fff;
+    text-align: center;
+    background-color: $gray-color;
+    padding: 7px 0;
+}
+
+.warning {
+    margin-top: 15px;
+    color: $notice-red;
+}

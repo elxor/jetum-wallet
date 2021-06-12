@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables";
+
+.preloaderWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: $body-background;
+}
+
+.preloader {
+    position: relative;
+    left: 50%;
+    top: 35%;
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    border: 3px solid $text-color;
+    border-radius: 50%;
+    border-left-color: $body-background;
+    -webkit-animation: spin 0.8s infinite linear;
+    animation: spin 0.8s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}

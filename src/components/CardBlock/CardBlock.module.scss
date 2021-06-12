@@ -1,0 +1,81 @@
+.block {
+    color: #fff;
+    display: grid;
+    grid-template-areas:
+        "logo title"
+        "logo item"
+        "logo arrow";
+    gap: 25px;
+    padding: 3% 1%;
+    max-width: 475px;
+    transition: transform 0.2s;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
+    }
+
+    @media (max-width: 992px) {
+        max-width: none;
+        gap: 20px;
+    }
+    @media (max-width: 480px) {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 6% 0;
+    }
+}
+
+.img {
+    grid-area: logo;
+    max-width: 100%;
+    align-self: center;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
+.iconSize {
+    font-size: 56px;
+    padding: 8px;
+}
+
+.titleStyle {
+    grid-area: title;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    @media (max-width: 480px) {
+        font-size: 1.2rem;
+    }
+}
+
+.textStyle {
+    grid-area: item;
+    font-size: 0.95rem;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
+.arrow {
+    grid-area: arrow;
+    font-size: 0.95rem;
+
+    position: relative;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
+.iconPosition {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}

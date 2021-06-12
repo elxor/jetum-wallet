@@ -1,0 +1,65 @@
+@import "../../assets/styles/variables";
+
+.content {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+}
+
+.title {
+    font-size: 1.15rem;
+}
+
+.body {
+    width: 480px;
+
+    @media (max-width: 760px) {
+        width: 80%;
+    }
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.switchWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.switchButtonSpan {
+    margin-left: 10px;
+}
+
+.dataRefresh {
+    color: $main-color-lighter;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.iconRefresh {
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+}
+
+.button {
+    height: 48px;
+    max-width: 250px;
+}
+
+.notice {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.noticeRed {
+    color: $notice-red;
+}

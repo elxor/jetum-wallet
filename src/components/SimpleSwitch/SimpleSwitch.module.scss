@@ -1,0 +1,54 @@
+@import "../../assets/styles/variables";
+
+.switcher {
+    display: inline;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.label {
+    z-index:1;
+    position: absolute;
+    background-color: #fff;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: $item-color-lighter;
+    cursor: pointer;
+
+    &:checked {
+        background-color: $main-color-lighter;
+        transition: background-color .2s;
+
+        &+.label {
+            left:23px;
+            right:0;
+            transition: left .2s, right .2s
+        }
+    }
+
+    &:not(:checked) {
+        transition: background-color .2s;
+
+        &+.label {
+            left:3px;
+            right: 20px;
+            transition: left .2s, right .2s
+        }
+    }
+}

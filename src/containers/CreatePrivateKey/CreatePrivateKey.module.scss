@@ -1,0 +1,50 @@
+@import '../../assets/styles/variables';
+
+.content {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+}
+
+.dataRefresh {
+    color: $main-color-lighter;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.iconRefresh {
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+}
+
+.item {
+    text-align: center;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.notice {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.noticeRed {
+    color: $notice-red;
+}
+
+.copy {
+    margin-left: 8px;
+}
+
+.button {
+    height: 48px;
+    max-width: 250px;
+}

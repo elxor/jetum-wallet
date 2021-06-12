@@ -1,0 +1,28 @@
+@import "../../assets/styles/variables";
+
+.selectWrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.selectCustom {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor:pointer;
+    padding: 0 4px;
+
+    @-moz-document url-prefix() {
+        text-indent: -2px;
+    }
+}
+
+.angleDown {
+    position: absolute;
+    color: $text-color;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -14px;
+}

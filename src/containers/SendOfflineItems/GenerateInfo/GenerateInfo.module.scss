@@ -1,0 +1,49 @@
+@import "../../../assets/styles/variables";
+
+.title {
+    background-color: $item-color-darker;
+    width: 100%;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.itemInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.text {
+    font-size: 1.1rem;
+}
+
+.marginRight {
+    margin-right: 12px;
+}
+
+.input {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.info {
+    margin-top: 5px;
+}
+
+.exportBtnWrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.exportBtn {
+    height: 34px;
+    max-width: 150px;
+}

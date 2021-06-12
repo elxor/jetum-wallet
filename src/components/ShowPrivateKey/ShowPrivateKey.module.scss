@@ -1,0 +1,27 @@
+@import "../../assets/styles/variables";
+
+.content {
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    padding: 10px 10px 0 10px;
+}
+
+.warning {
+    color: $notice-red;
+}
+
+.copy {
+    margin-left: 8px;
+}
+
+.button {
+    height: 28px;
+    max-width: 100px;
+    justify-self: center;
+}
+
+.privateKeyWrapper {
+    padding: 20px;
+    border: 1px solid $gray-color;
+}

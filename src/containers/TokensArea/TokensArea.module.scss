@@ -1,0 +1,45 @@
+@import "../../assets/styles/variables";
+
+.main {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .01);
+
+    @media (max-width: 900px) {
+        padding: 15px;
+    }
+}
+
+.text {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.iconRefresh {
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.addTokensBtn {
+    height: 28px;
+    max-width: 100px;
+}
+
+.input {
+    width: 100%;
+}
+
+.saveBtn {
+    height: 28px;
+    max-width: 60px;
+    margin-top: 15px;
+}
+
+.errorText {
+    color: $notice-red;
+    margin-top: 15px;
+}

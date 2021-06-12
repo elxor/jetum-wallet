@@ -1,0 +1,52 @@
+@import "../../assets/styles/variables";
+
+.body {
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.path {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
+}
+
+.select {
+    min-height: 24px;
+    min-width: 120px;
+    background-color: $item-color-lighter;
+    border: 1px solid $gray-color;
+}
+
+.navLeft,
+.navRight {
+    margin: 0 10px;
+    cursor: pointer;
+
+    &:hover {
+        color: $main-color-lighter;
+        text-decoration: underline;
+    }
+}
+
+.button {
+    height: 48px;
+    max-width: 250px;
+}
+
+.notice {
+    text-align: center;
+    color: $notice-red;
+}

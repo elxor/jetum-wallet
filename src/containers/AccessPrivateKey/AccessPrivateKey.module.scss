@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables";
+
+.content {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.input {
+    width: 80%;
+
+    @media (max-width: 640px) {
+        width: 95%;
+    }
+}
+
+.button {
+    height: 48px;
+    max-width: 250px;
+}
+
+.notice {
+    text-align: center;
+    color: $notice-red;
+}

@@ -1,0 +1,35 @@
+@import "../../assets/styles/variables";
+
+.tabs {
+    width: inherit;
+}
+
+.tabsHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.tabsTitle {
+    display: flex;
+    background-color: $item-color-lighter;
+    padding: 14px 2px;
+    cursor: pointer;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: 520px) {
+        font-size: 0.9rem;
+    }
+}
+
+.tabsActive {
+    background-color: $item-color-darker;
+    color: #fff;
+}
+
+.tabsBody {
+    background-color: #fff;
+    padding: 30px 0;
+}

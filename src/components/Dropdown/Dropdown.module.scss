@@ -1,0 +1,23 @@
+@import "../../assets/styles/variables";
+
+.dropdown {
+    position: absolute;
+    z-index: 99;
+    top: 40px;
+    right: 0;
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid $gray-color;
+}
+
+.item {
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: $main-color-lighter;
+
+    &:hover {
+        background-color: $item-color-lighter;
+        color: $text-color;
+    }
+}

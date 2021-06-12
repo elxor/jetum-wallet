@@ -1,0 +1,36 @@
+@import "../../assets/styles/variables";
+
+.copy {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+
+.hover {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+        &::after {
+            background-color: $item-color-darker;
+            bottom: 26px;
+            color: #fff;
+            content: attr(tooltip);
+            left: 20%;
+            padding: 3px;
+            position: absolute;
+            z-index: 98;
+            min-width: 120px;
+            font-size: 14px;
+            font-family: Tahoma, sans-serif;
+            text-align: center;
+        }
+    }
+}
+
+.iconClass {
+    position: relative;
+    top: 1px;
+}

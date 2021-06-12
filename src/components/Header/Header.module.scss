@@ -1,0 +1,53 @@
+@import "../../assets/styles/variables";
+
+.header {
+    height: 65px;
+    background-color: $main-color-lighter;
+    color: #fff;
+}
+
+.content {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+
+.itemMargin {
+    margin-right: 24px;
+
+    @media (max-width: 480px) {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+}
+
+.data {
+    display: inline-block;
+    min-width: 20px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.select {
+    min-height: 20px;
+    min-width: 80px;
+    background-color: #fff;
+}

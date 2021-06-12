@@ -1,0 +1,43 @@
+@import "../../../assets/styles/variables";
+
+.title {
+    background-color: $item-color-darker;
+    width: 100%;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.success,
+.error {
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+
+.text {
+    font-size: 1.1rem;
+}
+
+.headerSuccess {
+    font-size: 1.1rem;
+    color: $main-color-lighter;
+}
+
+.link {
+    text-decoration: none;
+    color: $main-color-lighter;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.headerError {
+    font-size: 1.1rem;
+    color: $notice-red;
+}

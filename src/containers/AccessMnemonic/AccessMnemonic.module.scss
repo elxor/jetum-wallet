@@ -1,0 +1,40 @@
+@import "../../assets/styles/variables";
+
+.content {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.body {
+    width: 480px;
+
+    @media (max-width: 760px) {
+        width: 80%;
+    }
+}
+
+.switchWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.switchButtonSpan {
+    margin-left: 10px;
+}
+
+.button {
+    height: 48px;
+    max-width: 250px;
+}
+
+.notice {
+    text-align: center;
+    color: $notice-red;
+}

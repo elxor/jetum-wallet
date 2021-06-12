@@ -1,0 +1,14 @@
+@import "../../assets/styles/variables";
+
+.textarea {
+    width: 100%;
+    height: 130px;
+    border: 1px solid $gray-color;
+    padding: 3px;
+    font-family: Tahoma, sans-serif;
+    color: $text-color;
+
+    &::placeholder {
+        color: $gray-color;
+    }
+}

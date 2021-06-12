@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'iconCustom';
+    src: url('./iconcustom.eot');
+    src: url('./iconcustom.eot') format('embedded-opentype'),
+        url('./iconcustom.ttf') format('truetype'),
+        url('./iconcustom.woff') format('woff'),
+        url('./iconcustom.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 iconCustom;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &-btc:before {
+        content: "\e905";
+    }
+    &-eth:before {
+        content: "\e906";
+    }
+    &-access:before {
+        content: "\e900";
+    }
+    &-create:before {
+        content: "\e901";
+    }
+}

@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables";
+
+.main {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .01);
+
+    @media (max-width: 900px) {
+        padding: 15px;
+    }
+}
+
+.text {
+    margin-bottom: 7px;
+    font-size: 1.1rem;
+}
+
+.copy {
+    margin-left: 8px;
+}
+
+.iconRefresh {
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.ethBalance {
+    margin-bottom: 5px;
+}
+
+.usdSymbol {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: $main-color-lighter;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,9 @@
+@import "../../assets/styles/variables";
+
+.input {
+    height: 40px;
+    padding: 0 8px;
+    border: 1px solid $gray-color;
+    font-family: Tahoma, sans-serif;
+    color: $text-color;
+}

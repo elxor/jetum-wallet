@@ -1,0 +1,75 @@
+@import "../../../assets/styles/variables";
+
+.title {
+    background-color: $item-color-darker;
+    width: 100%;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @media (max-width: 380px) {
+        flex-direction: column-reverse;
+        margin-bottom: 5px;
+    }
+}
+
+.text {
+    font-size: 1.1rem;
+}
+
+.uploadWrapper {
+    @media (max-width: 380px) {
+        margin-bottom: 5px;
+    }
+}
+
+.uploadLabel {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 34px;
+    width: 150px;
+    border: 2px solid $main-color-lighter;
+    color: $main-color-lighter;
+    text-align: center;
+    line-height: 30px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+.inputFile {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.viewBtnWrapper {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.viewBtn {
+    height: 34px;
+    max-width: 150px;
+}
+
+.warning {
+    color: $notice-red;
+    margin-bottom: 15px;
+}

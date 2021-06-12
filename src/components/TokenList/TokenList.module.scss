@@ -1,0 +1,24 @@
+@import "../../assets/styles/variables";
+
+.tokenList {
+    display: grid;
+    gap: 15px;
+    padding: 10px 0 20px 0;
+}
+
+.tokenItem {
+    display: flex;
+    align-items: center;
+    background-color: $body-background;
+}
+
+.balance {
+    margin-left: 10px;
+}
+
+.iconClose {
+    cursor: pointer;
+    padding: 7px;
+    margin-right: 20px;
+    color: $gray-color;
+}

@@ -1,0 +1,31 @@
+@import "../../assets/styles/variables";
+
+.success,
+.error {
+    text-align: center;
+    display: grid;
+    gap: 20px;
+}
+
+.headerSuccess {
+    font-size: 20px;
+    color: $main-color-lighter;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: $main-color-lighter;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.headerError {
+    font-size: 20px;
+    color: $notice-red;
+}

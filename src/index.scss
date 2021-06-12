@@ -1,0 +1,48 @@
+@import "./assets/styles/variables";
+@import "./assets/fontAwesomeCustom/fontAwesomeCustom.scss";
+@import "./assets/iconCustom/iconCustom.scss";
+
+*, ::after, ::before {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background-color: transparent;
+	font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Tahoma', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $body-background;
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 1%;
+    padding-left: 1%;
+
+    @media (max-width: 480px) {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+}
+
+.wordwrap {
+    word-break: break-all;
+}
